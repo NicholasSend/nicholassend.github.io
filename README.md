@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nicholas Sendyk - Personal Website
 
-## Getting Started
+This is the repository for my personal website, showcasing my experience, skills, and projects as a Data Engineer and AI/ML Enthusiast.
 
-First, run the development server:
+## Technologies Used
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Jekyll: Static site generator
+- GitHub Pages: Hosting platform
+- SCSS: CSS preprocessor
+- HTML5 & JavaScript: Front-end development
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Local Development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Ruby version 2.5.0 or higher
+- RubyGems
+- GCC and Make
 
-## Learn More
+### Setup
 
-To learn more about Next.js, take a look at the following resources:
+1. Install Jekyll and Bundler:
+   ```
+   gem install jekyll bundler
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Clone this repository:
+   ```
+   git clone https://github.com/nicholassend/nicholassend.github.io.git
+   cd nicholassend.github.io
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Install dependencies:
+   ```
+   bundle install
+   ```
 
-## Deploy on Vercel
+4. Run the development server:
+   ```
+   bundle exec jekyll serve
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+5. Open your browser and navigate to `http://localhost:4000`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Folder Structure
+
+- `_config.yml`: Jekyll configuration
+- `_data/`: Data files for skills, experience, education, and books
+- `_includes/`: Reusable components
+- `_layouts/`: Page templates
+- `_sass/`: SCSS partials
+- `assets/`: Static assets (CSS, JS, images)
+- `index.html`: Homepage
+
+## Customization
+
+- Update personal information in `_config.yml`
+- Modify content in the `_data/` folder
+- Add your profile image to `assets/images/`
+- Customize styles in the `_sass/` directory
+
+## Deployment
+
+This site is automatically deployed to GitHub Pages when changes are pushed to the main branch.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

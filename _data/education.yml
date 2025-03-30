@@ -1,0 +1,31 @@
+university:
+  name: Carleton University
+  initials: CU
+  degree: B.Eng., Software Engineering
+  period: September 2019 - April 2023
+  gpa: 4.0
+  honors:
+    - Dean's Honour List (2020-2023)
+    - Top Undergraduate Data Science Project
+    - Senate Medal for Academic Achievement
+  activities:
+    - Teaching Assistant
+    - Research Assistant
+    - Golden Key Honours Society
+
+certifications:
+  - title: Software Product Management Specialization
+    issuer: University of Alberta
+    date: August 2024
+    
+  - title: Game Theory
+    issuer: Stanford Online
+    date: February 2021
+    
+  - title: Web Design Essentials
+    issuer: BitDegree
+    date: August 2020
+    
+  - title: PredictionX
+    issuer: HarvardX
+    date: May 2020

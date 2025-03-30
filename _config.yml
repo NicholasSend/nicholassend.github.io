@@ -1,0 +1,44 @@
+# Site settings
+title: Nicholas Sendyk
+email: nicholas.sendyk@disroot.org
+description: >-
+  Data Engineer & AI/ML Enthusiast. Passionate about building intelligent systems 
+  that make sense of complex data. Turning caffeine into code and curiosity into solutions.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: nicholassend
+linkedin_username: nicholas-sendyk
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Theme settings
+theme: minima
+minima:
+  skin: classic
+  social_links:
+    github: nicholassend
+    linkedin: nicholas-sendyk
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name/
+
+# Sass settings
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - README.md

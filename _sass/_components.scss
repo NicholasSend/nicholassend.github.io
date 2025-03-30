@@ -1,0 +1,387 @@
+// Buttons
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: $border-radius-sm;
+    font-weight: 600;
+    transition: $transition-base;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: $white;
+    color: $primary-color;
+    border: 2px solid $white;
+    
+    &:hover {
+      background-color: rgba($white, 0.9);
+      color: darken($primary-color, 10%);
+    }
+  }
+  
+  .btn-outline {
+    background-color: transparent;
+    color: $white;
+    border: 2px solid $white;
+    
+    &:hover {
+      background-color: rgba($white, 0.1);
+    }
+  }
+  
+  // Skill Card
+  .skill-card {
+    background-color: $background-color;
+    border-radius: $border-radius-md;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+    
+    h3 {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      color: $primary-color;
+      
+      svg {
+        margin-right: 10px;
+      }
+    }
+  }
+  
+  .skill-level {
+    margin-top: 15px;
+  }
+  
+  .skill-level-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  
+  .skill-bar {
+    height: 10px;
+    background-color: $background-alt;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .skill-progress {
+    height: 100%;
+    border-radius: 5px;
+    background: linear-gradient(90deg, $primary-color 0%, $primary-light 100%);
+  }
+  
+  // Timeline
+  .timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: $background-alt;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -2px;
+    }
+  }
+  
+  .timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: $white;
+      border: 4px solid $primary-color;
+      border-radius: 50%;
+      top: 15px;
+      z-index: 1;
+    }
+    
+    &.left {
+      left: 0;
+      
+      &::after {
+        right: -12px;
+      }
+    }
+    
+    &.right {
+      left: 50%;
+      
+      &::after {
+        left: -12px;
+      }
+    }
+  }
+  
+  .timeline-content {
+    padding: 20px;
+    background-color: $white;
+    border-radius: $border-radius-md;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    
+    h3 {
+      color: $primary-color;
+      margin-bottom: 5px;
+    }
+    
+    .company {
+      font-weight: 600;
+      margin-bottom: 5px;
+      display: block;
+    }
+    
+    .period {
+      font-size: 0.9rem;
+      color: $text-light;
+      margin-bottom: 15px;
+      display: block;
+    }
+    
+    ul {
+      list-style-type: none;
+      
+      li {
+        margin-bottom: 8px;
+        position: relative;
+        padding-left: 20px;
+        
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 8px;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
+  
+  // University Info
+  .university-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .university-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: $background-alt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: $primary-color;
+    margin-right: 20px;
+    flex-shrink: 0;
+  }
+  
+  .certification-card {
+    background-color: $background-color;
+    border-radius: $border-radius-md;
+    padding: 15px;
+    transition: transform 0.3s;
+    
+    &:hover {
+      transform: translateY(-3px);
+    }
+    
+    h4 {
+      margin-bottom: 5px;
+      color: $primary-color;
+    }
+  }
+  
+  // Book Card
+  .book-card {
+    background-color: $white;
+    border-radius: $border-radius-md;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+    
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .book-cover {
+    height: 200px;
+    background-color: $primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  .book-info {
+    padding: 15px;
+    
+    h4 {
+      font-size: 1rem;
+      margin-bottom: 5px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    
+    p {
+      font-size: 0.9rem;
+      color: $text-light;
+      margin-bottom: 0;
+    }
+  }
+  
+  // Contact options
+  .contact-option {
+    background-color: rgba($white, 0.1);
+    border-radius: $border-radius-md;
+    padding: 30px;
+    transition: transform 0.3s, background-color 0.3s;
+    text-align: center;
+    color: $white;
+    
+    &:hover {
+      transform: translateY(-5px);
+      background-color: rgba($white, 0.15);
+    }
+    
+    .contact-icon {
+      width: 60px;
+      height: 60px;
+      background-color: rgba($white, 0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+    }
+    
+    h3 {
+      color: $white;
+      margin-bottom: 10px;
+    }
+    
+    p {
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+      opacity: 0.9;
+    }
+    
+    span {
+      color: $white;
+      font-weight: 500;
+    }
+  }
+  
+  // Social links
+  .social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $background-alt;
+    color: $primary-color;
+    transition: $transition-base;
+    
+    &:hover {
+      background-color: $primary-color;
+      color: $white;
+      transform: translateY(-3px);
+    }
+  }
+  
+  // Location highlight
+  .location-highlight {
+    margin-top: $spacing-lg;
+    padding: 20px;
+    background-color: #e9f4ff;
+    border-radius: $border-radius-md;
+    border-left: 4px solid $primary-color;
+    
+    h3 {
+      display: flex;
+      align-items: center;
+      color: $primary-color;
+      margin-bottom: 0.75rem;
+      
+      svg {
+        margin-right: 10px;
+      }
+    }
+  }
+  
+  // Profile image
+  .profile-img {
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: $background-alt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $text-light;
+    font-weight: 500;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  // Education stats
+  .education-stats {
+    background-color: $white;
+    border-radius: $border-radius-md;
+    padding: 20px;
+    margin-top: 20px;
+    
+    .stat-item {
+      margin-bottom: 15px;
+    }
+    
+    .stat-item-label {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+  }

@@ -1,0 +1,24 @@
+<!-- Experience Section -->
+<section class="experience" id="experience">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title">Work Experience</h2>
+      </div>
+      <div class="timeline">
+        {% for job in site.data.experience %}
+          <div class="timeline-item {% cycle 'left', 'right' %}">
+            <div class="timeline-content">
+              <h3>{{ job.title }}</h3>
+              <span class="company">{{ job.company }}</span>
+              <span class="period">{{ job.period }}</span>
+              <ul>
+                {% for achievement in job.achievements %}
+                  <li>{{ achievement }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>

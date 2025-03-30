@@ -1,0 +1,24 @@
+- title: Data Engineer
+  company: Lytica
+  period: January 2022 – May 2022, May 2023 – Present
+  achievements:
+    - Designed and implemented data pipelines to support data integration, processing, and analysis
+    - Leveraged LangChain, OpenAI's API, and LLaMa to enable document summarization, extraction, and analysis
+    - Developed dashboards with advanced filtering, for complex component data visualization
+    - Automated real-time risk data acquisition for sustainability and geopolitical insights leveraging LLMs
+
+- title: Software and Systems Development Project Lead
+  company: Ericsson
+  period: September 2022 – April 2023
+  achievements:
+    - Led development of a VR-controlled telepresence system leveraging 5G ARISE Wireless lab technologies
+    - Designed real-time control systems for robotics platforms using ROS, C#, Python, and OpenCV
+    - Delivered a functional proof-of-concept system and collaborated with Ingenium for remote touring applications
+
+- title: Contract Data Scientist
+  company: Ciena
+  period: May 2021 – September 2021, May 2022 – September 2022
+  achievements:
+    - Developed lightweight version control mechanisms for large-scale telemetry data
+    - Created interactive visualizations for network path traversal and optimized difference analysis algorithms
+    - Reduced data storage requirements by 88% with advanced data sanitization scripts
