@@ -9,7 +9,7 @@ baseurl: ""
 url: "" 
 github_username: nicholassend
 linkedin_username: nicholas-sendyk
-profile_image: /assets/images/nicholas_Sendyk.JPG
+profile_image: /assets/images/nicholas_sendyk.jpg
 
 # Build settings
 markdown: kramdown
