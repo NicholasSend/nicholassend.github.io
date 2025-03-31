@@ -632,35 +632,45 @@
     display: grid;
     grid-template-columns: 300px 1fr;
     gap: 40px;
-    align-items: start;
+    align-items: center; /* Center vertically */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .profile-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   .profile-img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: var(--border-radius);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; /* Make the image circular */
     overflow: hidden;
     box-shadow: var(--box-shadow);
+    margin-bottom: 20px;
   }
   
   .profile-img img.rounded-profile {
     display: block;
-    width: 100%;
-    height: auto;
+    width: 105%; /* Slightly zoom in to hide edges */
+    height: 105%; /* Slightly zoom in to hide edges */
     object-fit: cover;
-    border-radius: var(--border-radius);
-    transition: transform 0.3s ease;
     border: 3px solid var(--border-color);
+    transition: transform 0.3s ease;
+    transform: scale(1.05); /* Zoom the image a bit */
+    margin: -2.5%; /* Adjust positioning to center the zoomed image */
   }
   
   .profile-img img.rounded-profile:hover {
-    transform: scale(1.03);
+    transform: scale(1.08); /* Slightly more zoom on hover */
     border-color: var(--primary-color);
   }
   
   .profile-placeholder {
     width: 100%;
-    aspect-ratio: 1 / 1;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -670,27 +680,11 @@
     font-weight: 700;
   }
   
-  .profile-details h3 {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 24px;
-    margin-bottom: 16px;
-    color: var(--text-color);
-  }
-  
-  .location-highlight {
-    background-color: var(--card-bg);
-    padding: 20px;
-    border-radius: var(--border-radius);
-    margin: 24px 0;
-    border: 1px solid var(--border-color);
-  }
-  
   .social-links {
     display: flex;
     gap: 16px;
-    margin-top: 24px;
+    margin-top: 15px;
+    justify-content: center; /* Center the social buttons */
   }
   
   .social-link {
@@ -710,6 +704,51 @@
     background-color: var(--primary-color);
     color: #ffffff;
     transform: translateY(-3px);
+  }
+  
+  .profile-details h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    color: var(--text-color);
+  }
+  
+  .location-highlight {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    margin: 24px 0;
+    border: 1px solid var(--border-color);
+  }
+  
+  /* Mobile adjustments */
+  @media (max-width: 992px) {
+    .about-content {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+    
+    .profile-column {
+      margin-bottom: 10px;
+    }
+    
+    .profile-img {
+      margin: 0 auto 15px;
+    }
+    
+    .social-links {
+      margin-bottom: 10px;
+    }
+    
+    .profile-details {
+      text-align: center;
+    }
+    
+    .profile-details h3 {
+      justify-content: center;
+    }
   }
   
   /* Skills Section - New Skill Level Indicators */

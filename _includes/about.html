@@ -5,38 +5,24 @@
       <h2 class="section-title">About Me</h2>
     </div>
     <div class="about-content">
-      <div class="profile-img">
-        {% if site.profile_image %}
-          <img src="{{ site.profile_image | relative_url }}" alt="{{ site.title }}" class="rounded-profile">
-        {% else %}
-          <div class="profile-placeholder">{{ site.title | slice: 0, 1 }}</div>
-        {% endif %}
-      </div>
-      <div class="profile-details">
-        <p>I'm a Data Engineer with expertise in AI/ML technologies, particularly focused on leveraging LLMs for data processing and analysis. With a perfect 4.0 GPA in Software Engineering from Carleton University, I combine strong academic foundations with practical industry experience.</p>
-        
-        <div class="location-highlight">
-          <h3>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M12 22C16 18 20 14.4183 20 10C20 5.58172 16.4183 2 12 2C7.58172 2 4 5.58172 4 10C4 14.4183 8 18 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            Ottawa: My Home & Inspiration
-          </h3>
-          <p>Born and raised in Ottawa, I've developed a deep appreciation for our city's unique blend of natural beauty, tech innovation, and cultural diversity. From skating on the Rideau Canal to exploring Gatineau Park, Ottawa's landscape continually inspires my creativity and problem-solving approach.</p>
+      <div class="profile-column">
+        <div class="profile-img">
+          {% if site.profile_image %}
+            <img src="{{ site.profile_image | relative_url }}" alt="{{ site.title }}" class="rounded-profile">
+          {% else %}
+            <div class="profile-placeholder">{{ site.title | slice: 0, 1 }}</div>
+          {% endif %}
         </div>
         
-        <p>When I'm not designing data pipelines or coding, you'll find me exploring Ottawa's extensive trail system on my mountain bike, planning my next international adventure (I've visited 15 countries and counting!), or experimenting with home automation projects that often involve more blinking LEDs than my apartment really needs.</p>
-        
         <div class="social-links">
-          <a href="https://linkedin.com/in/{{ site.linkedin_username }}/" class="social-link" aria-label="LinkedIn">
+          <a href="https://linkedin.com/in/{{ site.linkedin_username }}/" class="social-link" aria-label="LinkedIn" target="_blank">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M6 9H2V21H6V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </a>
-          <a href="https://github.com/{{ site.github_username }}/" class="social-link" aria-label="GitHub">
+          <a href="https://github.com/{{ site.github_username }}/" class="social-link" aria-label="GitHub" target="_blank">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9 19C4.7 20.4 4.7 16.5 3 16M15 21V17.5C15 16.5 15.1 16.1 14.5 15.5C17.3 15.2 20 14.1 20 9.5C19.9988 8.30384 19.5325 7.15733 18.7 6.3C19.0905 5.26165 19.0545 4.11021 18.6 3.1C18.6 3.1 17.5 2.8 15.6 4C13.9462 3.5445 12.2062 3.5445 10.6 4C8.7 2.8 7.6 3.1 7.6 3.1C7.14548 4.11021 7.10948 5.26165 7.5 6.3C6.66745 7.15733 6.20125 8.30384 6.2 9.5C6.2 14.1 8.9 15.2 11.7 15.5C11.1 16.1 11 16.5 11 17.5V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -48,6 +34,23 @@
             </svg>
           </a>
         </div>
+      </div>
+      
+      <div class="profile-details">
+        <p>As a Data Engineer specializing in AI/ML technologies, I bridge the gap between raw data and actionable intelligence. My work focuses on architecting robust data ecosystems that power cutting-edge machine learning applications, with particular expertise in leveraging Large Language Models to transform unstructured information into valuable insights. Graduating with a perfect 4.0 GPA in Software Engineering from Carleton University, I blend rigorous technical foundations with practical industry experience to solve complex data challenges.</p>
+        
+        <div class="location-highlight">
+          <h3>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 22C16 18 20 14.4183 20 10C20 5.58172 16.4183 2 12 2C7.58172 2 4 5.58172 4 10C4 14.4183 8 18 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Ottawa: My Home & Inspiration
+          </h3>
+          <p>Born and raised in Ottawa, I've developed a profound appreciation for our city's unique character—where government corridors intersect with tech innovation hubs against a backdrop of natural beauty. From winter skating along the world's largest frozen canal to summer hikes through Gatineau Park's vibrant trails, Ottawa's diverse landscape continually fuels my creativity and shapes my collaborative, solution-oriented approach to engineering challenges.</p>
+        </div>
+        
+        <p>Beyond the world of data and code, I'm an avid trail runner exploring Ottawa's extensive trail networks, a global traveler who has immersed myself in 15 countries (and counting), and a passionate tinkerer whose home automation projects frequently result in more blinking LEDs than my square footage reasonably justifies. This blend of outdoor adventure, cultural exploration, and technical experimentation keeps my problem-solving skills sharp and my perspective fresh.</p>
       </div>
     </div>
   </div>
