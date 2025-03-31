@@ -100,6 +100,5 @@ The site is designed to be easily customizable:
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
----
 
 Built with ❤️ in Ottawa, Canada | [View Live Site](https://nicholassend.github.io)
