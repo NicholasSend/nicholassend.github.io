@@ -1,68 +1,112 @@
-# Nicholas Sendyk - Personal Website
+# Nicholas Sendyk - Personal Portfolio
 
-This is the repository for my personal website, showcasing my experience, skills, and projects as a Data Engineer and AI/ML Enthusiast.
+![Portfolio Screenshot](assets/images/portfolio-screenshot.png)
 
-## Technologies Used
+A modern, responsive personal portfolio website built with Jekyll, showcasing my skills, experience, and projects as a Data Engineer & AI/ML Enthusiast.
 
-- Jekyll: Static site generator
-- GitHub Pages: Hosting platform
-- SCSS: CSS preprocessor
-- HTML5 & JavaScript: Front-end development
+## ✨ Features
 
-## Local Development
+- **Responsive Design**: Looks great on all devices from mobile to desktop
+- **Dark Theme**: Easy on the eyes with a sophisticated dark color scheme
+- **Interactive Elements**: Subtle animations and hover effects for an engaging experience
+- **Modular Components**: Organized structure for easy updates and maintenance
+- **Social Media Integration**: Quick access to professional profiles and contact information
+- **Category Filtering**: Filter skills and technologies by category
+- **Education & Certifications**: Showcase academic achievements and professional certifications
+- **Work Timeline**: Visual representation of professional experience
+
+## 🛠️ Technologies
+
+- **Jekyll**: Static site generator
+- **HTML5/CSS3**: Modern markup and styling
+- **JavaScript**: Interactive elements and animations
+- **Responsive Grid**: Flexible layout for all screen sizes
+- **CSS Variables**: Theme customization and consistency
+- **Media Queries**: Tailored experience for different devices
+- **CSS Animations**: Subtle motion for enhanced user experience
+
+## 🚀 Setup & Deployment
 
 ### Prerequisites
 
-- Ruby version 2.5.0 or higher
+- Ruby (version 2.7.0 or newer)
 - RubyGems
-- GCC and Make
+- Jekyll
+- Bundler
 
-### Setup
+### Local Development
 
-1. Install Jekyll and Bundler:
-   ```
-   gem install jekyll bundler
-   ```
-
-2. Clone this repository:
-   ```
-   git clone https://github.com/nicholassend/nicholassend.github.io.git
-   cd nicholassend.github.io
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/nicholassend/portfolio.git
+   cd portfolio
    ```
 
-3. Install dependencies:
-   ```
+2. Install dependencies:
+   ```bash
    bundle install
    ```
 
-4. Run the development server:
-   ```
+3. Run the development server:
+   ```bash
    bundle exec jekyll serve
    ```
 
-5. Open your browser and navigate to `http://localhost:4000`
+4. Open your browser and navigate to `http://localhost:4000`
 
-## Folder Structure
+### Folder Structure
 
-- `_config.yml`: Jekyll configuration
-- `_data/`: Data files for skills, experience, education, and books
-- `_includes/`: Reusable components
-- `_layouts/`: Page templates
-- `_sass/`: SCSS partials
-- `assets/`: Static assets (CSS, JS, images)
-- `index.html`: Homepage
+```
+portfolio/
+├── _config.yml               # Site configuration
+├── _data/                    # Data files (YAML)
+│   ├── books.yml             # Favorite books information
+│   ├── education.yml         # Education and certifications data
+│   ├── experience.yml        # Work experience data
+│   └── skills.yml            # Skills and technologies data
+├── _includes/                # Reusable components
+│   ├── about.html            # About section
+│   ├── contact.html          # Contact section
+│   ├── education.html        # Education section
+│   ├── experience.html       # Experience section
+│   ├── footer.html           # Page footer
+│   ├── head.html             # HTML head content
+│   ├── header.html           # Page header/navigation
+│   ├── library.html          # Books/reading section
+│   └── skills.html           # Skills section
+├── _layouts/                 # Page layouts
+│   ├── default.html          # Default layout
+│   └── home.html             # Home page layout
+├── assets/                   # Static assets
+│   ├── css/                  # Stylesheets
+│   ├── images/               # Images and photos
+│   └── js/                   # JavaScript files
+├── .gitignore                # Git ignore file
+├── 404.html                  # 404 error page
+├── Gemfile                   # Ruby dependencies
+├── index.html                # Homepage
+└── README.md                 # Project documentation
+```
 
-## Customization
+### Customization
 
-- Update personal information in `_config.yml`
-- Modify content in the `_data/` folder
-- Add your profile image to `assets/images/`
-- Customize styles in the `_sass/` directory
+The site is designed to be easily customizable:
 
-## Deployment
+1. **Personal Information**: Edit `_config.yml` to update name, email, social media links, etc.
+2. **Content**: Modify files in the `_data` directory to update skills, experience, education, etc.
+3. **Styling**: Customize the appearance by editing variables in `assets/css/main.css`
+4. **Sections**: Add or remove sections by editing the layout files in `_includes`
 
-This site is automatically deployed to GitHub Pages when changes are pushed to the main branch.
+## 📝 License
 
-## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+## 📞 Contact
+
+- Email: [nars@rogers.com](mailto:nars@rogers.com)
+- LinkedIn: [nicholas-sendyk](https://linkedin.com/in/nicholas-sendyk/)
+- GitHub: [nicholassend](https://github.com/nicholassend)
+
+---
+
+Built with ❤️ in Ottawa, Canada | [View Live Site](#)
