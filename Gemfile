@@ -3,6 +3,15 @@ source "https://rubygems.org"
 # Jekyll itself
 gem "jekyll", "~> 4.2.0"
 
+# Required for Ruby 3.4+
+gem "csv"
+gem "logger"
+gem "base64"
+gem "bigdecimal"
+
+gem "webrick"
+gem "minima", "~> 2.5"
+
 # Jekyll plugins
 group :jekyll_plugins do
   gem "jekyll-feed"

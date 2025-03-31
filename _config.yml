@@ -29,11 +29,6 @@ collections:
     output: true
     permalink: /:collection/:name/
 
-# Sass settings
-sass:
-  sass_dir: _sass
-  style: compressed
-
 # Exclude from processing
 exclude:
   - Gemfile
