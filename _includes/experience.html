@@ -1,24 +1,46 @@
 <!-- Experience Section -->
 <section class="experience" id="experience">
-    <div class="container">
-      <div class="text-center">
-        <h2 class="section-title">Work Experience</h2>
-      </div>
-      <div class="timeline">
-        {% for job in site.data.experience %}
-          <div class="timeline-item {% cycle 'left', 'right' %}">
-            <div class="timeline-content">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-title">Work Experience</h2>
+    </div>
+    
+    <div class="experience-timeline">
+      {% for job in site.data.experience %}
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="experience-company-logo">
+              {{ job.company | slice: 0, 1 }}
+            </div>
+            <div class="experience-details">
               <h3>{{ job.title }}</h3>
-              <span class="company">{{ job.company }}</span>
-              <span class="period">{{ job.period }}</span>
-              <ul>
-                {% for achievement in job.achievements %}
-                  <li>{{ achievement }}</li>
-                {% endfor %}
-              </ul>
+              <div class="experience-meta">
+                <span class="company">{{ job.company }}</span>
+                <span class="period">{{ job.period }}</span>
+              </div>
             </div>
           </div>
-        {% endfor %}
-      </div>
+          
+          <div class="experience-content">
+            <ul class="experience-achievements">
+              {% for achievement in job.achievements %}
+                <li>{{ achievement }}</li>
+              {% endfor %}
+            </ul>
+            
+            {% if job.link %}
+              <div class="experience-link">
+                <a href="{{ job.link }}" target="_blank" rel="noopener noreferrer">
+                  Learn more
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
     </div>
-  </section>
+  </div>
+</section>

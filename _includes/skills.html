@@ -1,28 +1,79 @@
 <!-- Skills Section -->
 <section class="skills" id="skills">
-    <div class="container">
-      <div class="text-center">
-        <h2 class="section-title">Skills & Technologies</h2>
-      </div>
-      <div class="skills-grid">
-        {% for skill in site.data.skills %}
-        <div class="skill-card">
-          <h3>
-            {{ skill.icon }}
-            {{ skill.title }}
-          </h3>
-          <p>{{ skill.description }}</p>
-          <div class="skill-level">
-            <div class="skill-level-label">
-              <span>Proficiency</span>
-              <span>{{ skill.proficiency }}%</span>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-progress" style="width: '{{ skill.proficiency | default: 0 }}%';"></div>
-            </div>
-          </div>
-        </div>
-        {% endfor %}
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-title">Skills & Technologies</h2>
+      <p class="section-subtitle">A collection of tools and technologies I work with</p>
+    </div>
+    
+    <div class="skills-categories">
+      <div class="category-tabs">
+        <button class="category-tab active" data-category="all">All</button>
+        <button class="category-tab" data-category="development">Development</button>
+        <button class="category-tab" data-category="data">Data</button>
+        <button class="category-tab" data-category="cloud">Cloud</button>
       </div>
     </div>
-  </section>
+    
+    <div class="skills-grid">
+      {% for skill in site.data.skills %}
+      <div class="skill-card" data-categories="{{ skill.categories | join: ' ' }}">
+        <div class="skill-header">
+          <div class="skill-icon">
+            {{ skill.icon }}
+          </div>
+          <h3>{{ skill.title }}</h3>
+        </div>
+        
+        <p>{{ skill.description }}</p>
+        
+        <!-- Skill Level Badge -->
+        <div class="skill-level skill-level-{{ skill.level }}">
+          <div class="skill-dots">
+            <span class="skill-dot"></span>
+            <span class="skill-dot"></span>
+            <span class="skill-dot"></span>
+            <span class="skill-dot"></span>
+          </div>
+          <div class="skill-level-text">{{ skill.level | capitalize }}</div>
+        </div>
+        
+        {% if skill.technologies %}
+        <div class="skill-tags">
+          {% for tech in skill.technologies %}
+          <span class="skill-tag">{{ tech }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Set up category filtering
+  const categoryTabs = document.querySelectorAll('.category-tab');
+  const skillCards = document.querySelectorAll('.skill-card');
+  
+  categoryTabs.forEach(tab => {
+    tab.addEventListener('click', function() {
+      // Update active tab
+      categoryTabs.forEach(t => t.classList.remove('active'));
+      this.classList.add('active');
+      
+      const category = this.dataset.category;
+      
+      // Filter skills
+      skillCards.forEach(card => {
+        if (category === 'all' || card.dataset.categories.includes(category)) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+});
+</script>

@@ -1,23 +1,39 @@
 - title: Designing Data-Intensive Applications
   author: Martin Kleppmann
   color: "#1a365d"
+  cover: /assets/images/book1.jpg
   
 - title: Atomic Habits
   author: James Clear
   color: "#0066cc"
+  cover: /assets/images/book2.jpg
   
 - title: Deep Learning
   author: Ian Goodfellow et al.
   color: "#4299e1"
+  cover: /assets/images/book3.jpg
   
 - title: Superintelligence
   author: Nick Bostrom
   color: "#3182ce"
+  cover: /assets/images/book4.jpg
   
 - title: The Phoenix Project
   author: Gene Kim
   color: "#2b6cb0"
+  cover: /assets/images/book5.jpg
   
 - title: Thinking, Fast and Slow
   author: Daniel Kahneman
   color: "#2c5282"
+  cover: /assets/images/book6.jpg
+  
+- title: The Pragmatic Programmer
+  author: Andrew Hunt & David Thomas
+  color: "#1e3a8a"
+  cover: /assets/images/book7.jpg
+  
+- title: Clean Code
+  author: Robert C. Martin
+  color: "#1e3a8a"
+  cover: /assets/images/book8.jpg

@@ -8,24 +8,29 @@ university:
     - Dean's Honour List (2020-2023)
     - Top Undergraduate Data Science Project
     - Senate Medal for Academic Achievement
+    - Faculty Scholarship
   activities:
     - Teaching Assistant
     - Research Assistant
     - Golden Key Honours Society
 
 certifications:
-  - title: Software Product Management Specialization
+  - title: Software Product Management Professional Specialization
     issuer: University of Alberta
     date: August 2024
+    description: Mastered the principles of Agile development for building effective software and delighting clients.
     
   - title: Game Theory
     issuer: Stanford Online
     date: February 2021
+    description: Gained critical skills for strategic thinking and decision-making in competitive situations.
     
   - title: Web Design Essentials
     issuer: BitDegree
     date: August 2020
+    description: Acquired foundational skills in web design, including HTML, CSS, and design principles.
     
   - title: PredictionX
     issuer: HarvardX
     date: May 2020
+    description: Gained historical knowledge of prediction methods used in various fields, including sports, healthcare, and finance.

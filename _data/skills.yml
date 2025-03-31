@@ -4,7 +4,9 @@
       <path d="M8 9L11 12L8 15M13 15H16M5 20H19C20.1046 20 21 19.1046 21 18V6C21 4.89543 20.1046 4 19 4H5C3.89543 4 3 4.89543 3 6V18C3 19.1046 3.89543 20 5 20Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
   description: Proficient in multiple programming languages including JavaScript, Python, and Java. Experienced with modern frameworks and best practices.
-  proficiency: 85
+  level: "expert"
+  categories: [development]
+  technologies: [JavaScript, Python, Java, React, Node.js]
 
 - title: Data Engineering
   icon: >
@@ -12,7 +14,9 @@
       <path d="M21 5C21 6.65685 16.9706 8 12 8C7.02944 8 3 6.65685 3 5M21 5C21 3.34315 16.9706 2 12 2C7.02944 2 3 3.34315 3 5M21 5V19C21 20.66 17 22 12 22C7 22 3 20.66 3 19V5M21 12C21 13.66 17 15 12 15C7 15 3 13.66 3 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
   description: Skilled in building data pipelines, ETL processes, and data warehousing solutions. Experience with SQL, NoSQL, and distributed systems.
-  proficiency: 78
+  level: "advanced"
+  categories: [data, development]
+  technologies: [SQL, Spark, Kafka, MongoDB, ETL]
 
 - title: Machine Learning & AI
   icon: >
@@ -22,7 +26,9 @@
       <path d="M12 13C14.1217 13 16.1566 13.8429 17.6569 15.3431C19.1571 16.8434 20 18.8783 20 21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
   description: Expert in developing and deploying machine learning models. Experienced with deep learning, NLP, and computer vision applications.
-  proficiency: 82
+  level: "advanced"
+  categories: [data]
+  technologies: [TensorFlow, PyTorch, NLP, Computer Vision, LangChain]
 
 - title: Product Management
   icon: >
@@ -34,12 +40,48 @@
       <path d="M16 12V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
   description: Experienced in product strategy, roadmap development, and cross-functional team leadership. Strong focus on user-centered design.
-  proficiency: 72
+  level: "intermediate"
+  categories: [development]
+  technologies: [Agile, Scrum, User Stories, Wireframing, A/B Testing]
 
 - title: Cloud Services
   icon: >
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M22 16.92V19.92C22 20.4704 21.7893 20.9983 21.4142 21.3733C21.0391 21.7484 20.5113 21.959 19.96 21.959C19.3 21.96 18.64 21.8613 18 21.669C15.5 20.9169 13.16 19.5461 11.1 17.6C9.08 15.6965 7.8 13.4 7 11C6.8 10.36 6.7 9.7 6.7 9.04C6.70002 8.49191 6.90856 7.96795 7.28072 7.59297C7.65288 7.21799 8.16634 7.00171 8.71 7H11.7C12.7 7 13.5 7.8 13.7 8.8C13.8 9.4 13.9 10 14.1 10.6C14.3 11.3 14.1 12.1 13.7 12.6L12.7 13.6C13.6 15.1 15 16.5 16.5 17.4L17.5 16.4C17.9 16 18.7 15.8 19.4 16C20 16.2 20.6 16.3 21.2 16.4C22.2 16.6 23 17.4 23 18.4L22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M5 19H19M5 19C3.89543 19 3 18.1046 3 17V7C3 5.89543 3.89543 5 5 5H19C20.1046 5 21 5.89543 21 7V17C21 18.1046 20.1046 19 19 19M5 19L19 19M9 9H15M9 12H15M9 15H13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
   description: Extensive experience with AWS and Azure cloud platforms. Proficient in cloud architecture, serverless computing, and containerization.
-  proficiency: 76
+  level: "advanced"
+  categories: [cloud, development]
+  technologies: [AWS, Azure, Docker, Kubernetes, Terraform]
+
+- title: Data Analysis
+  icon: >
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16 6L12 2L8 6M12 2V11M22 14C22 18.4183 18.4183 22 14 22C9.58172 22 6 18.4183 6 14C6 9.58172 9.58172 6 14 6C17.3521 6 20.2014 8.02226 21.4034 10.9389" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  description: Skilled in data visualization, statistical analysis, and deriving insights from complex datasets. Experience with data modeling and predictive analytics.
+  level: "expert"
+  categories: [data]
+  technologies: [Python, R, Tableau, PowerBI, Pandas]
+
+- title: DevOps & CI/CD
+  icon: >
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12 1V3M12 21V23M4.22 4.22L5.64 5.64M18.36 18.36L19.78 19.78M1 12H3M21 12H23M4.22 19.78L5.64 18.36M18.36 5.64L19.78 4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  description: Experienced in implementing CI/CD pipelines, infrastructure as code, and DevOps practices for efficient software delivery and operations.
+  level: "intermediate"
+  categories: [cloud, development]
+  technologies: [Jenkins, GitHub Actions, Ansible, GitLab CI, CircleCI]
+
+- title: Large Language Models
+  icon: >
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0035 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12 12.5V12.51M8 12.5V12.51M16 12.5V12.51" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  description: Expertise in leveraging and fine-tuning large language models for various applications including summarization, content generation, and knowledge extraction.
+  level: "advanced"
+  categories: [data, development]
+  technologies: [OpenAI, LangChain, Hugging Face, LLaMA, Embeddings]

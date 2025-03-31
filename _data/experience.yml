@@ -6,6 +6,9 @@
     - Leveraged LangChain, OpenAI's API, and LLaMa to enable document summarization, extraction, and analysis
     - Developed dashboards with advanced filtering, for complex component data visualization
     - Automated real-time risk data acquisition for sustainability and geopolitical insights leveraging LLMs
+    - Developed an autonomous knowledge graph for detecting mergers and acquisitions with 85% accuracy
+    - Published preliminary research to the ACM Digital Library and presented at CASCON'22
+  link: https://dl.acm.org/doi/10.5555/3566055.3566058
 
 - title: Software and Systems Development Project Lead
   company: Ericsson
@@ -22,3 +25,21 @@
     - Developed lightweight version control mechanisms for large-scale telemetry data
     - Created interactive visualizations for network path traversal and optimized difference analysis algorithms
     - Reduced data storage requirements by 88% with advanced data sanitization scripts
+    - Designed and optimized PostgreSQL databases to improve query speed and data management
+
+- title: Junior Software Engineer
+  company: Teldio
+  period: May 2020 – September 2020
+  achievements:
+    - Contributed within a scrum team as a full stack developer for Teldio's D3M Networks offering
+    - Responsible for planning and developing code that was deployed to production on critical customer features
+    - Leveraged technologies such as Ruby on Rails, JavaScript, VueJS, GoJS, CoffeeScript, and Backbone/Marionette
+
+- title: Student Software & Data Scientist
+  company: Assent Compliance
+  period: May 2017 – August 2017, May 2018 – August 2018, May 2019 – August 2019
+  achievements:
+    - Calibrated machine learning classification algorithms and curated datasets for compliance document validation
+    - Built and deployed natural language processing models, automating the review of compliance documents
+    - Developed front-end and back-end components using AngularJS, .NET Core, and AWS microservices
+    - Wrote Stored Procedures in T-SQL for MSSQL database to be leveraged by back-end microservices

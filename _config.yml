@@ -1,13 +1,15 @@
 # Site settings
 title: Nicholas Sendyk
 email: nicholas.sendyk@disroot.org
+location: Ottawa, ON
 description: >-
   Data Engineer & AI/ML Enthusiast. Passionate about building intelligent systems 
   that make sense of complex data. Turning caffeine into code and curiosity into solutions.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" 
+url: "" 
 github_username: nicholassend
 linkedin_username: nicholas-sendyk
+profile_image: /assets/images/nicholas_Sendyk.JPG
 
 # Build settings
 markdown: kramdown

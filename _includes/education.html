@@ -1,69 +1,83 @@
-<!-- Education Section -->
+<!-- Education & Certifications Section -->
 <section class="education" id="education">
-    <div class="container">
-      <div class="text-center">
-        <h2 class="section-title">Education & Certifications</h2>
-      </div>
-      <div class="education-content">
-        <div class="education-main">
-          <div class="university-info">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-title">Education & Certifications</h2>
+      <p class="section-subtitle">Academic excellence and professional development</p>
+    </div>
+    
+    <div class="education-certifications-layout">
+      <!-- Education Column -->
+      <div class="education-column">
+        <div class="column-header">
+          <h3>Academic Background</h3>
+        </div>
+        
+        <div class="education-card">
+          <div class="education-card-header">
             <div class="university-logo">{{ site.data.education.university.initials }}</div>
             <div class="university-details">
-              <h3>{{ site.data.education.university.degree }}</h3>
+              <h4>{{ site.data.education.university.degree }}</h4>
               <p>{{ site.data.education.university.name }}</p>
-              <p>{{ site.data.education.university.period }}</p>
+              <p class="education-period">{{ site.data.education.university.period }}</p>
             </div>
           </div>
-          <div class="education-stats">
-            <div class="stat-item">
-              <div class="stat-item-label">
-                <span>GPA</span>
+          
+          <div class="education-card-content">
+            <div class="education-gpa">
+              <div class="gpa-circle">
                 <span>{{ site.data.education.university.gpa }}</span>
-              </div>
-              <div class="skill-bar">
-                {% assign gpa_width = site.data.education.university.gpa | times: 25 %}
-                <div class="skill-progress" data-width="{{ gpa_width | default: 0 }}"></div>
-              </div>
+                <small>GPA</small>
               </div>
             </div>
-            <div>
-              <strong>Honors & Awards:</strong>
-              <ul>
-                {% for honor in site.data.education.university.honors %}
-                  <li>{{ honor }}</li>
-                {% endfor %}
-              </ul>
-            </div>
-            <div>
-              <strong>Activities:</strong>
-              <ul>
-                {% for activity in site.data.education.university.activities %}
-                  <li>{{ activity }}</li>
-                {% endfor %}
-              </ul>
+            
+            <div class="education-info">
+              <div class="education-honors-awards">
+                <h5>Honors & Awards</h5>
+                <ul>
+                  {% for honor in site.data.education.university.honors %}
+                    <li>{{ honor }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+              
+              <div class="education-activities">
+                <h5>Activities</h5>
+                <ul>
+                  {% for activity in site.data.education.university.activities %}
+                    <li>{{ activity }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-        <div>
-          <h3>Certifications</h3>
-          <div class="certifications">
-            {% for cert in site.data.education.certifications %}
-              <div class="certification-card">
-                <h4>{{ cert.title }}</h4>
-                <div class="certification-meta">
-                  <span>{{ cert.issuer }}</span>
-                  <span>{{ cert.date }}</span>
+      </div>
+      
+      <!-- Certifications Column -->
+      <div class="certifications-column">
+        <div class="column-header">
+          <h3>Professional Certifications</h3>
+        </div>
+        
+        <div class="certifications-cards">
+          {% for cert in site.data.education.certifications %}
+            <div class="certification-card">
+              <div class="certification-top">
+                <div class="certification-issuer-logo">
+                  {{ cert.issuer | slice: 0, 1 }}
                 </div>
+                <div class="certification-date">{{ cert.date }}</div>
               </div>
-            {% endfor %}
-          </div>
+              <h4>{{ cert.title }}</h4>
+              <div class="certification-meta">
+                <span class="certification-issuer">{{ cert.issuer }}</span>
+              </div>
+              <p class="certification-description">{{ cert.description }}</p>
+            </div>
+          {% endfor %}
         </div>
       </div>
     </div>
-    <script>
-      document.querySelectorAll('.skill-progress').forEach(function(progress) {
-        const width = progress.getAttribute('data-width') || 0;
-        progress.style.width = width + '%';
-      });
-    </script>
-  </section>
+  </div>
+</section>
