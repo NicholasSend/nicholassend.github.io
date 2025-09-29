@@ -1,10 +1,7 @@
 <!-- Library Section -->
 <section class="library" id="library">
   <div class="container">
-    <div class="text-center">
-      <h2 class="section-title">My Favorite Reads</h2>
-      <p>Books that have shaped my thinking and approach to tech and life</p>
-    </div>
+    {% include section_header.html title="My Favorite Reads" subtitle="Books that have shaped my thinking and approach to tech and life" %}
     <div class="book-grid">
       {% assign books_limit = 8 %}
       {% for book in site.data.books limit:books_limit %}

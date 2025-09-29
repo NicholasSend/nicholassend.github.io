@@ -1,9 +1,7 @@
 <!-- About Section -->
 <section class="about" id="about">
   <div class="container">
-    <div class="text-center">
-      <h2 class="section-title">About Me</h2>
-    </div>
+    {% include section_header.html title="About Me" %}
     <div class="about-content">
       <div class="profile-column">
         <div class="profile-img">
@@ -39,6 +37,15 @@
       <div class="profile-details">
         <p>As a Data Engineer specializing in AI/ML technologies, I bridge the gap between raw data and actionable intelligence. My work focuses on architecting robust data ecosystems that power cutting-edge machine learning applications, with particular expertise in leveraging Large Language Models to transform unstructured information into valuable insights. Graduating with a perfect 4.0 GPA in Software Engineering from Carleton University, I blend rigorous technical foundations with practical industry experience to solve complex data challenges.</p>
         
+        <div class="about-highlights">
+          <h3>Career Highlights</h3>
+          <ul>
+            <li><span>Lytica</span>: shipped LLM-powered analytics that surface supply-chain risk faster.</li>
+            <li><span>Ericsson</span>: led a VR telepresence prototype linking robotics with 5G labs.</li>
+            <li><span>Ciena</span>: built telemetry tooling that cut storage requirements by 88%.</li>
+          </ul>
+        </div>
+        
         <div class="location-highlight">
           <h3>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -55,3 +62,4 @@
     </div>
   </div>
 </section>
+

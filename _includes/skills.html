@@ -1,20 +1,28 @@
 <!-- Skills Section -->
 <section class="skills" id="skills">
   <div class="container">
-    <div class="text-center">
-      <h2 class="section-title">Skills & Technologies</h2>
-      <p class="section-subtitle">A collection of tools and technologies I work with</p>
-    </div>
+    {% include section_header.html title="Skills & Technologies" subtitle="A collection of tools and technologies I work with" %}
     
     <div class="skills-categories">
+      {% assign categories = '' | split: '' %}
+      {% for skill in site.data.skills %}
+        {% if skill.categories %}
+          {% for category in skill.categories %}
+            {% unless categories contains category %}
+              {% assign categories = categories | push: category %}
+            {% endunless %}
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+      {% if categories.size > 0 %}
       <div class="category-tabs">
         <button class="category-tab active" data-category="all">All</button>
-        <button class="category-tab" data-category="development">Development</button>
-        <button class="category-tab" data-category="data">Data</button>
-        <button class="category-tab" data-category="cloud">Cloud</button>
+        {% for category in categories %}
+          <button class="category-tab" data-category="{{ category }}">{{ category | replace: '-', ' ' | capitalize }}</button>
+        {% endfor %}
       </div>
+      {% endif %}
     </div>
-    
     <div class="skills-grid">
       {% for skill in site.data.skills %}
       <div class="skill-card" data-categories="{{ skill.categories | join: ' ' }}">
@@ -51,29 +59,3 @@
   </div>
 </section>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // Set up category filtering
-  const categoryTabs = document.querySelectorAll('.category-tab');
-  const skillCards = document.querySelectorAll('.skill-card');
-  
-  categoryTabs.forEach(tab => {
-    tab.addEventListener('click', function() {
-      // Update active tab
-      categoryTabs.forEach(t => t.classList.remove('active'));
-      this.classList.add('active');
-      
-      const category = this.dataset.category;
-      
-      // Filter skills
-      skillCards.forEach(card => {
-        if (category === 'all' || card.dataset.categories.includes(category)) {
-          card.style.display = '';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    });
-  });
-});
-</script>

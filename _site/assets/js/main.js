@@ -35,6 +35,26 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
     
+    // Skills category filtering
+    const categoryTabs = document.querySelectorAll('.category-tab');
+    const skillCards = document.querySelectorAll('.skill-card');
+
+    if (categoryTabs.length && skillCards.length) {
+      categoryTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          categoryTabs.forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+
+          const category = tab.dataset.category;
+          skillCards.forEach(card => {
+            const cardCategories = (card.dataset.categories || '').split(' ');
+            const isVisible = category === 'all' || cardCategories.includes(category);
+            card.style.display = isVisible ? '' : 'none';
+          });
+        });
+      });
+    }
+
     // Active menu item based on scroll position
     const sections = document.querySelectorAll('section[id]');
     
@@ -60,3 +80,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize on page load
     highlightNavItem();
   });
+
+
+

@@ -1,0 +1,10 @@
+<div class="section-heading text-center">
+  <h2 class="section-title">{{ include.title }}</h2>
+  {% if include.subtitle %}
+    {% assign subtitle_tag = include.subtitle_tag | default: 'p' %}
+    {% assign subtitle_class = include.subtitle_class | default: 'section-subtitle' %}
+    <{{ subtitle_tag }}{% unless subtitle_class == '' %} class="{{ subtitle_class }}"{% endunless %}>
+      {{ include.subtitle }}
+    </{{ subtitle_tag }}>
+  {% endif %}
+</div>

@@ -45,7 +45,6 @@
           <ul id="nav-menu">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#library">Library</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -54,6 +53,7 @@
       </div>
     </div>
   </header>
+
 
     <main>
       <!-- Hero Section -->
@@ -77,9 +77,11 @@
 <!-- About Section -->
 <section class="about" id="about">
   <div class="container">
-    <div class="text-center">
-      <h2 class="section-title">About Me</h2>
-    </div>
+    <div class="section-heading text-center">
+  <h2 class="section-title">About Me</h2>
+  
+</div>
+
     <div class="about-content">
       <div class="profile-column">
         <div class="profile-img">
@@ -113,6 +115,15 @@
       <div class="profile-details">
         <p>As a Data Engineer specializing in AI/ML technologies, I bridge the gap between raw data and actionable intelligence. My work focuses on architecting robust data ecosystems that power cutting-edge machine learning applications, with particular expertise in leveraging Large Language Models to transform unstructured information into valuable insights. Graduating with a perfect 4.0 GPA in Software Engineering from Carleton University, I blend rigorous technical foundations with practical industry experience to solve complex data challenges.</p>
         
+        <div class="about-highlights">
+          <h3>Career Highlights</h3>
+          <ul>
+            <li><span>Lytica</span>: shipped LLM-powered analytics that surface supply-chain risk faster.</li>
+            <li><span>Ericsson</span>: led a VR telepresence prototype linking robotics with 5G labs.</li>
+            <li><span>Ciena</span>: built telemetry tooling that cut storage requirements by 88%.</li>
+          </ul>
+        </div>
+        
         <div class="location-highlight">
           <h3>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -129,23 +140,39 @@
     </div>
   </div>
 </section>
+
+
 <!-- Skills Section -->
 <section class="skills" id="skills">
   <div class="container">
-    <div class="text-center">
-      <h2 class="section-title">Skills & Technologies</h2>
-      <p class="section-subtitle">A collection of tools and technologies I work with</p>
-    </div>
+    <div class="section-heading text-center">
+  <h2 class="section-title">Skills & Technologies</h2>
+  
+    
+    
+    <p class="section-subtitle">
+      A collection of tools and technologies I work with
+    </p>
+  
+</div>
+
     
     <div class="skills-categories">
+      
+      
+      
       <div class="category-tabs">
         <button class="category-tab active" data-category="all">All</button>
-        <button class="category-tab" data-category="development">Development</button>
-        <button class="category-tab" data-category="data">Data</button>
-        <button class="category-tab" data-category="cloud">Cloud</button>
+        
+          <button class="category-tab" data-category="development">Development</button>
+        
+          <button class="category-tab" data-category="data">Data</button>
+        
+          <button class="category-tab" data-category="cloud">Cloud</button>
+        
       </div>
+      
     </div>
-    
     <div class="skills-grid">
       
       <div class="skill-card" data-categories="development">
@@ -488,215 +515,21 @@
   </div>
 </section>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // Set up category filtering
-  const categoryTabs = document.querySelectorAll('.category-tab');
-  const skillCards = document.querySelectorAll('.skill-card');
-  
-  categoryTabs.forEach(tab => {
-    tab.addEventListener('click', function() {
-      // Update active tab
-      categoryTabs.forEach(t => t.classList.remove('active'));
-      this.classList.add('active');
-      
-      const category = this.dataset.category;
-      
-      // Filter skills
-      skillCards.forEach(card => {
-        if (category === 'all' || card.dataset.categories.includes(category)) {
-          card.style.display = '';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    });
-  });
-});
-</script>
-<!-- Experience Section -->
-<section class="experience" id="experience">
-  <div class="container">
-    <div class="text-center">
-      <h2 class="section-title">Work Experience</h2>
-    </div>
-    
-    <div class="experience-timeline">
-      
-        <div class="experience-card">
-          <div class="experience-header">
-            <div class="experience-company-logo">
-              L
-            </div>
-            <div class="experience-details">
-              <h3>Data Engineer</h3>
-              <div class="experience-meta">
-                <span class="company">Lytica</span>
-                <span class="period">January 2022 – May 2022, May 2023 – Present</span>
-              </div>
-            </div>
-          </div>
-          
-          <div class="experience-content">
-            <ul class="experience-achievements">
-              
-                <li>Designed and implemented data pipelines to support data integration, processing, and analysis</li>
-              
-                <li>Leveraged LangChain, OpenAI's API, and LLaMa to enable document summarization, extraction, and analysis</li>
-              
-                <li>Developed dashboards with advanced filtering, for complex component data visualization</li>
-              
-                <li>Automated real-time risk data acquisition for sustainability and geopolitical insights leveraging LLMs</li>
-              
-                <li>Developed an autonomous knowledge graph for detecting mergers and acquisitions with 85% accuracy</li>
-              
-                <li>Published preliminary research to the ACM Digital Library and presented at CASCON'22</li>
-              
-            </ul>
-            
-            
-              <div class="experience-link">
-                <a href="https://dl.acm.org/doi/10.5555/3566055.3566058" target="_blank" rel="noopener noreferrer">
-                  Learn more
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </a>
-              </div>
-            
-          </div>
-        </div>
-      
-        <div class="experience-card">
-          <div class="experience-header">
-            <div class="experience-company-logo">
-              E
-            </div>
-            <div class="experience-details">
-              <h3>Software and Systems Development Project Lead</h3>
-              <div class="experience-meta">
-                <span class="company">Ericsson</span>
-                <span class="period">September 2022 – April 2023</span>
-              </div>
-            </div>
-          </div>
-          
-          <div class="experience-content">
-            <ul class="experience-achievements">
-              
-                <li>Led development of a VR-controlled telepresence system leveraging 5G ARISE Wireless lab technologies</li>
-              
-                <li>Designed real-time control systems for robotics platforms using ROS, C#, Python, and OpenCV</li>
-              
-                <li>Delivered a functional proof-of-concept system and collaborated with Ingenium for remote touring applications</li>
-              
-            </ul>
-            
-            
-          </div>
-        </div>
-      
-        <div class="experience-card">
-          <div class="experience-header">
-            <div class="experience-company-logo">
-              C
-            </div>
-            <div class="experience-details">
-              <h3>Contract Data Scientist</h3>
-              <div class="experience-meta">
-                <span class="company">Ciena</span>
-                <span class="period">May 2021 – September 2021, May 2022 – September 2022</span>
-              </div>
-            </div>
-          </div>
-          
-          <div class="experience-content">
-            <ul class="experience-achievements">
-              
-                <li>Developed lightweight version control mechanisms for large-scale telemetry data</li>
-              
-                <li>Created interactive visualizations for network path traversal and optimized difference analysis algorithms</li>
-              
-                <li>Reduced data storage requirements by 88% with advanced data sanitization scripts</li>
-              
-                <li>Designed and optimized PostgreSQL databases to improve query speed and data management</li>
-              
-            </ul>
-            
-            
-          </div>
-        </div>
-      
-        <div class="experience-card">
-          <div class="experience-header">
-            <div class="experience-company-logo">
-              T
-            </div>
-            <div class="experience-details">
-              <h3>Junior Software Engineer</h3>
-              <div class="experience-meta">
-                <span class="company">Teldio</span>
-                <span class="period">May 2020 – September 2020</span>
-              </div>
-            </div>
-          </div>
-          
-          <div class="experience-content">
-            <ul class="experience-achievements">
-              
-                <li>Contributed within a scrum team as a full stack developer for Teldio's D3M Networks offering</li>
-              
-                <li>Responsible for planning and developing code that was deployed to production on critical customer features</li>
-              
-                <li>Leveraged technologies such as Ruby on Rails, JavaScript, VueJS, GoJS, CoffeeScript, and Backbone/Marionette</li>
-              
-            </ul>
-            
-            
-          </div>
-        </div>
-      
-        <div class="experience-card">
-          <div class="experience-header">
-            <div class="experience-company-logo">
-              A
-            </div>
-            <div class="experience-details">
-              <h3>Student Software & Data Scientist</h3>
-              <div class="experience-meta">
-                <span class="company">Assent Compliance</span>
-                <span class="period">May 2017 – August 2017, May 2018 – August 2018, May 2019 – August 2019</span>
-              </div>
-            </div>
-          </div>
-          
-          <div class="experience-content">
-            <ul class="experience-achievements">
-              
-                <li>Calibrated machine learning classification algorithms and curated datasets for compliance document validation</li>
-              
-                <li>Built and deployed natural language processing models, automating the review of compliance documents</li>
-              
-                <li>Developed front-end and back-end components using AngularJS, .NET Core, and AWS microservices</li>
-              
-                <li>Wrote Stored Procedures in T-SQL for MSSQL database to be leveraged by back-end microservices</li>
-              
-            </ul>
-            
-            
-          </div>
-        </div>
-      
-    </div>
-  </div>
-</section>
+
 <!-- Education & Certifications Section -->
 <section class="education" id="education">
   <div class="container">
-    <div class="text-center">
-      <h2 class="section-title">Education & Certifications</h2>
-      <p class="section-subtitle">Academic excellence and professional development</p>
-    </div>
+    <div class="section-heading text-center">
+  <h2 class="section-title">Education & Certifications</h2>
+  
+    
+    
+    <p class="section-subtitle">
+      Academic excellence and professional development
+    </p>
+  
+</div>
+
     
     <div class="education-certifications-layout">
       <!-- Education Column -->
@@ -825,13 +658,21 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
   </div>
 </section>
+
 <!-- Library Section -->
 <section class="library" id="library">
   <div class="container">
-    <div class="text-center">
-      <h2 class="section-title">My Favorite Reads</h2>
-      <p>Books that have shaped my thinking and approach to tech and life</p>
-    </div>
+    <div class="section-heading text-center">
+  <h2 class="section-title">My Favorite Reads</h2>
+  
+    
+    
+    <p class="section-subtitle">
+      Books that have shaped my thinking and approach to tech and life
+    </p>
+  
+</div>
+
     <div class="book-grid">
       
       
@@ -934,13 +775,21 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
   </div>
 </section>
+
 <!-- Contact Section -->
 <section class="contact" id="contact">
   <div class="container">
-    <div class="text-center">
-      <h2 class="section-title">Get In Touch</h2>
-      <p class="section-subtitle">I'm always open to new opportunities, collaborations, and exciting projects. Feel free to connect with me.</p>
-    </div>
+    <div class="section-heading text-center">
+  <h2 class="section-title">Get In Touch</h2>
+  
+    
+    
+    <p class="section-subtitle">
+      I'm always open to new opportunities, collaborations, and exciting projects. Feel free to connect with me.
+    </p>
+  
+</div>
+
     
     <div class="contact-grid">
       <a href="mailto:nicholas.sendyk@disroot.org" class="contact-option">
@@ -981,6 +830,8 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
   </div>
 </section>
+
+
     </main>
     
     <footer>
