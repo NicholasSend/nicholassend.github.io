@@ -2,38 +2,46 @@
   author: Ethan Mollick
   color: "#1a365d"
   cover: /assets/images/book1.jpg
+  goodreads: https://www.goodreads.com/book/show/198678736-co-intelligence
   
 - title: Inspired
   author: Marty Cagan
   color: "#0066cc"
   cover: /assets/images/book2.jpg
+  goodreads: https://www.goodreads.com/book/show/35249663-inspired
   
 - title: Atomic Habits
   author: James Clear
   color: "#4299e1"
   cover: /assets/images/book3.jpg
+  goodreads: https://www.goodreads.com/book/show/40121378-atomic-habits
   
 - title: Design Patterns
   author: Gang of Four
   color: "#3182ce"
   cover: /assets/images/book4.jpg
+  goodreads: https://www.goodreads.com/book/show/85009.Design_Patterns
   
 - title: Supercommunicators
   author: Charles Duhigg
   color: "#2b6cb0"
   cover: /assets/images/book5.jpg
+  goodreads: https://www.goodreads.com/book/show/157981748-supercommunicators
   
 - title: How to Win Friends and Influence People
   author: Dale Carnegie
   color: "#2c5282"
   cover: /assets/images/book6.jpg
+  goodreads: https://www.goodreads.com/book/show/4865.How_to_Win_Friends_and_Influence_People
   
 - title: The Hard Thing About Hard Things
   author: Andrew Hunt & David Thomas
   color: "#1e3a8a"
   cover: /assets/images/book7.jpg
+  goodreads: https://www.goodreads.com/book/show/18176747-the-hard-thing-about-hard-things
   
 - title: Life 3.0
   author: Max Tegmark
   color: "#1e3a8a"
   cover: /assets/images/book8.jpg
+  goodreads: https://www.goodreads.com/book/show/34272565-life-3-0

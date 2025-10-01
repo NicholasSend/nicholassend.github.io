@@ -8,7 +8,21 @@
         <div class="book-card">
           <div class="book-cover" style="background-color: '{{ book.color | default: '#cccccc' }}';">
             {% if book.cover %}
-              <img src="{{ book.cover | relative_url }}" alt="{{ book.title }} by {{ book.author }}">
+              {% assign book_link_candidate = book.goodreads | default: book.url %}
+              {% if book_link_candidate %}
+                {% if book_link_candidate contains '://' %}
+                  {% assign book_link = book_link_candidate %}
+                  {% assign opens_in_new_tab = true %}
+                {% else %}
+                  {% assign book_link = book_link_candidate | relative_url %}
+                  {% assign opens_in_new_tab = false %}
+                {% endif %}
+                <a href="{{ book_link }}"{% if opens_in_new_tab %} target="_blank" rel="noopener"{% endif %}>
+                  <img src="{{ book.cover | relative_url }}" alt="{{ book.title }} by {{ book.author }}">
+                </a>
+              {% else %}
+                <img src="{{ book.cover | relative_url }}" alt="{{ book.title }} by {{ book.author }}">
+              {% endif %}
             {% endif %}
           </div>
           <div class="book-info">

@@ -2,6 +2,7 @@
  * Main JavaScript file for Nicholas Sendyk's portfolio site
  */
 document.addEventListener('DOMContentLoaded', function() {
+    document.body.classList.add('js-enabled');
     // Mobile navigation toggle
     const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
     const navMenu = document.getElementById('nav-menu');
@@ -55,6 +56,24 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
 
+    const header = document.querySelector('header');
+    const aboutSection = document.getElementById('about');
+
+    function toggleHeaderVisibility() {
+      if (!header || !aboutSection) {
+        return;
+      }
+
+      const headerHeight = header.offsetHeight || 0;
+      const aboutTop = aboutSection.getBoundingClientRect().top;
+
+      if (aboutTop <= headerHeight + 10) {
+        header.classList.add('is-visible');
+      } else {
+        header.classList.remove('is-visible');
+      }
+    }
+
     // Active menu item based on scroll position
     const sections = document.querySelectorAll('section[id]');
     
@@ -75,9 +94,17 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
     
-    window.addEventListener('scroll', highlightNavItem);
-    
+    const handleScroll = () => {
+      highlightNavItem();
+      toggleHeaderVisibility();
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', toggleHeaderVisibility);
+    window.addEventListener('load', toggleHeaderVisibility);
+
     // Initialize on page load
+    toggleHeaderVisibility();
     highlightNavItem();
   });
 

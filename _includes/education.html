@@ -12,7 +12,13 @@
         
         <div class="education-card">
           <div class="education-card-header">
-            <div class="university-logo">{{ site.data.education.university.initials }}</div>
+            <div class="university-logo{% if site.data.education.university.logo %} has-image{% endif %}">
+              {% if site.data.education.university.logo %}
+                <img src="{{ site.data.education.university.logo | relative_url }}" alt="{{ site.data.education.university.name }} logo" loading="lazy">
+              {% else %}
+                {{ site.data.education.university.initials }}
+              {% endif %}
+            </div>
             <div class="university-details">
               <h4>{{ site.data.education.university.degree }}</h4>
               <p>{{ site.data.education.university.name }}</p>
@@ -60,15 +66,19 @@
         <div class="certifications-cards">
           {% for cert in site.data.education.certifications %}
             <div class="certification-card">
-              <div class="certification-top">
-                <div class="certification-issuer-logo">
-                  {{ cert.issuer | slice: 0, 1 }}
+              <div class="certification-header">
+                <div class="certification-issuer-logo{% if cert.logo %} has-image{% endif %}">
+                  {% if cert.logo %}
+                    <img src="{{ cert.logo | relative_url }}" alt="{{ cert.issuer }} logo" loading="lazy">
+                  {% else %}
+                    {{ cert.issuer | slice: 0, 1 }}
+                  {% endif %}
+                </div>
+                <div class="certification-heading">
+                  <h4>{{ cert.title }}</h4>
+                  <span class="certification-issuer">{{ cert.issuer }}</span>
                 </div>
                 <div class="certification-date">{{ cert.date }}</div>
-              </div>
-              <h4>{{ cert.title }}</h4>
-              <div class="certification-meta">
-                <span class="certification-issuer">{{ cert.issuer }}</span>
               </div>
               <p class="certification-description">{{ cert.description }}</p>
             </div>
