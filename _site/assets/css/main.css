@@ -915,6 +915,10 @@
     background-color: rgba(244, 114, 182, 0.1);
   }
   
+  .skills {
+    padding-bottom: 60px;
+  }
+
   .skills-categories {
     margin-bottom: 30px;
     display: flex;
@@ -959,7 +963,7 @@
   
   .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 30px;
     position: relative;
     z-index: 1;

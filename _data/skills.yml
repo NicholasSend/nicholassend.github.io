@@ -6,7 +6,7 @@
   description: Proficient in multiple programming languages including JavaScript, Python, and Java. Experienced with modern frameworks and best practices.
   level: "expert"
   categories: [development]
-  technologies: [JavaScript, Python, Java, React, Node.js]
+  technologies: [JavaScript, Python, Java, React, Node.js, Git, Ruby on Rails]
 
 - title: Data Engineering
   icon: >
@@ -16,7 +16,7 @@
   description: Skilled in building data pipelines, ETL processes, and data warehousing solutions. Experience with SQL, NoSQL, and distributed systems.
   level: "advanced"
   categories: [data, development]
-  technologies: [SQL, Spark, Kafka, MongoDB, ETL]
+  technologies: [SQL, Spark, Kafka, MongoDB, ETL, PostgreSQL, Amazon Web Services (AWS)]
 
 - title: Machine Learning & AI
   icon: >
@@ -28,7 +28,7 @@
   description: Expert in developing and deploying machine learning models. Experienced with deep learning, NLP, and computer vision applications.
   level: "advanced"
   categories: [data]
-  technologies: [TensorFlow, PyTorch, NLP, Computer Vision, LangChain]
+  technologies: [TensorFlow, PyTorch, NLP, Computer Vision, LangChain, Knowledge Graphs]
 
 - title: Product Management
   icon: >
@@ -42,7 +42,7 @@
   description: Experienced in product strategy, roadmap development, and cross-functional team leadership. Strong focus on user-centered design.
   level: "intermediate"
   categories: [development]
-  technologies: [Agile, Scrum, User Stories, Wireframing, A/B Testing]
+  technologies: [Agile, Scrum, User Stories, Wireframing, A/B Testing, Leadership, Teamwork]
 
 - title: Cloud Services
   icon: >
@@ -52,7 +52,7 @@
   description: Extensive experience with AWS and Azure cloud platforms. Proficient in cloud architecture, serverless computing, and containerization.
   level: "advanced"
   categories: [cloud, development]
-  technologies: [AWS, Azure, Docker, Kubernetes, Terraform]
+  technologies: [AWS, Azure, Docker, Kubernetes, Terraform, Linux, Computer Networking]
 
 - title: Data Analysis
   icon: >
@@ -62,7 +62,7 @@
   description: Skilled in data visualization, statistical analysis, and deriving insights from complex datasets. Experience with data modeling and predictive analytics.
   level: "expert"
   categories: [data]
-  technologies: [Python, R, Tableau, PowerBI, Pandas]
+  technologies: [Python, R, Tableau, PowerBI, Pandas, Data Visualization, SQL]
 
 - title: DevOps & CI/CD
   icon: >
@@ -73,7 +73,7 @@
   description: Experienced in implementing CI/CD pipelines, infrastructure as code, and DevOps practices for efficient software delivery and operations.
   level: "intermediate"
   categories: [cloud, development]
-  technologies: [Jenkins, GitHub Actions, Ansible, GitLab CI, CircleCI]
+  technologies: [Jenkins, GitHub Actions, Ansible, GitLab CI, CircleCI, Git, Test Driven Development]
 
 - title: Large Language Models
   icon: >
@@ -84,4 +84,4 @@
   description: Expertise in leveraging and fine-tuning large language models for various applications including summarization, content generation, and knowledge extraction.
   level: "advanced"
   categories: [data, development]
-  technologies: [OpenAI, LangChain, Hugging Face, LLaMA, Embeddings]
+  technologies: [OpenAI, LangChain, Hugging Face, LLaMA, Embeddings, NLP, Machine Learning]
